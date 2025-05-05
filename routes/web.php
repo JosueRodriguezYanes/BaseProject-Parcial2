@@ -57,4 +57,6 @@ Route::get('sin-permisos', [ControlController::class,'indexSinPermiso'])->name('
 
 Route::get('/admin/dashboard', [DashboardController::class,'vistaDashboard'])->name('admin.dashboard.index');
 
+Route::get('/libros', [ControlController::class, 'mostrarLibros']);
 
+Route::get('/admin/preferencias', [ControlController::class, 'mostrarLibrosEnVista'])->name('admin.preferencias');

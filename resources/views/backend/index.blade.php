@@ -31,9 +31,10 @@
     <div class="content-wrapper" style=" background-color: #fff;">
         <!-- redireccionamiento de vista -->
 
-        <iframe style="width: 100%; resize: initial; overflow: hidden; min-height: 96vh" frameborder="0"  scrolling="" id="frameprincipal" src="{{ route($ruta) }}" name="frameprincipal">
-        </iframe>
+       
+        <iframe style="width: 100%; resize: initial; overflow: hidden; min-height: 96vh" frameborder="0" id="frameprincipal" src="{{ route('admin.preferencias') }}" name="frameprincipal"></iframe>
 
+        
     </div>
 
     @include("backend.menus.footer")
