@@ -8,7 +8,7 @@ use App\Http\Controllers\Backend\Roles\PermisoController;
 use App\Http\Controllers\Backend\Perfil\PerfilController;
 use App\Http\Controllers\Backend\Configuracion\ConfiguracionController;
 use App\Http\Controllers\Backend\Registro\RegistroController;
-
+use App\Http\Controllers\MonedaController;
 
 
 use App\Http\Controllers\Backend\Dashboard\DashboardController;
@@ -60,3 +60,4 @@ Route::get('/admin/dashboard', [DashboardController::class,'vistaDashboard'])->n
 Route::get('/libros', [ControlController::class, 'mostrarLibros']);
 
 Route::get('/admin/preferencias', [ControlController::class, 'mostrarLibrosEnVista'])->name('admin.preferencias');
+Route::post('/convertir-moneda', [MonedaController::class, 'convertir'])->name('convertir.moneda');
